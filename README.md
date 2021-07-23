@@ -11,5 +11,6 @@
 ## Interviewpage
 ![image](https://user-images.githubusercontent.com/38915700/126806150-0de53843-e715-4321-8ccb-58ed593ec12d.png)
 
-## Interviewpage responsive
-![image](https://user-images.githubusercontent.com/38915700/126806088-9158d825-ac81-4f5a-aedf-e281a837f9ea.png)
+## Responsive Interviewpage
+![image](https://user-images.githubusercontent.com/38915700/126806794-369a07ac-a063-4142-b0e7-2bda2762572f.png)
+
