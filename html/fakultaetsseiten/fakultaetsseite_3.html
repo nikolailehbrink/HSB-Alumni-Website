@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../scss/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../../scss/main.css">
+  <title>Alumni-Portal HSB - Fakultät 3</title>
+</head>
+
+<body>
+<div class="fakultaetscontainer">
+  <!-- <<<<< TOP-BAR FÜR FAKULTÄTSINFORMATIONEN >>>>> -->
+
+  <!-- Full-Width-Top-Container, der den oberen Teil der Fakultätsseite enthält. -->
+  <div class="container-fluid p-0 shadow mb-5">
+    <!-- Innerer Container, der Grid-System mit "row" festlegt. Hier wird der Hintergrund-Verlauf festgelegt. -->
+    <div class="row header-background-orange m-0">
+
+      <!-- <<<<< ERSTE COLUMN >>>>> -->
+
+      <!-- Erste Column im oberen Container, wird erst ab medium-size angezeigt. Dann wird es das linke Drittel im oberen Container. -->
+      <div class="col-md-4 col-lg p-3 d-none d-md-block">
+        <!-- Divider-Container, damit gewährleistet werden kann, dass der Zurück-Button in diesem Container 
+          und der Informationstext über die Fakultät im nächsten Container richtig positioniert werden kann. -->
+        <div class="container h-50 d-flex">
+          <!-- Link zum Zurückgehen zur Startseite -->
+          <a href="../../index.html">
+            <img src="../../assets/bilder/icons/zurueckIcon.png" alt="Zurück zur Startseite" class="zurueckButtonBild">
+          </a>
+        </div>
+        <!-- Divider-Container, damit gewährleistet werden kann, dass der Zurück-Button in diesem Container 
+          und der Informationstext über die Fakultät im nächsten Container richtig positioniert werden kann. 
+          Ab medium-size und darunter werden die Infos nicht mehr angezeigt. Die anderen Klassen sorgen für 
+          die richtige Positionierung im Container-->
+        <div class="container h-50 align-items-end justify-content-end d-md-none d-lg-flex">
+          <!-- Übergeordneter Container für den Informationstext. Text wird rechtsbündig ausgerichtet -->
+          <div class="text-right whiteFont">
+            <!-- Studiengangsinformationen: Teil 1, wie viele Studiengänge gibt es in dieser Fakultät -->
+            <h5 class="d-block">9 Studiengänge
+              <!-- Damit das Bild in einer Linie zu dem Text steht, wird es hier in dem h5-Attribut genestet. -->
+              <img src="../../assets/bilder/icons/educationHat.png" alt="Icon eines Bildungshutes"
+                class="fakultaetsIcons ml-2">
+            </h5>
+            <!-- Studiengangsinformationen: Teil 2, wie viele Studierende gibt es in dieser Fakultät. 
+              Der margin-block-end wird auf 0 gesetzt, damit nach dem Text kein Standardmäßiger margin mehr kommt 
+              und gewährleistet wird, dass der Text ganz unten rechts anliegt.  -->
+            <h5 style="margin-block-end: 0">1.200 Studierende
+              <!-- Zusätzlich zu den Icon-Einstellungen wird hier noch ein padding-right gesetzt, weil die 
+                Icons zentriert angezeigt werden sollen und unterschiedliche width bzw. heights haben und 
+                sonst rechtsbündig aussehen würden. -->
+              <img src="../../assets/bilder/icons/crowdedPeople.png" alt="" class="fakultaetsIcons ml-2 pr-1">
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- <<<<< ZWEITE COLUMN >>>>> -->
+
+      <!-- Zweite Column im oberen Container, wird dauerhaft angezeigt und beinhaltet den Fakultätsbanner.
+      Der Inhalt wird zentriert angezeigt. -->
+      <div class="col-md-4 col-lg d-flex align-items-center justify-content-center p-3">
+        <!-- Der Zurück-Button für klein bis medium-size. Das Attribut position-absolut wird verwendet, damit
+        der Button nicht den zentrierten Fakultätsbanner zur Seite schiebt, sondern unabhängig vom Grid-System agiert. -->
+        <div class="position-absolute d-md-none zurueckButton">
+          <!-- Link zur Startseite -->
+          <a href="../../index.html">
+            <img src="../../assets/bilder/icons/zurueckIcon.png" alt="Zurück zur Startseite" class="zurueckButtonBild">
+          </a>
+        </div>
+        <!-- Bild des Fakultätsbanners -->
+        <img src="../../assets/bilder/fakultaetspreview/Fakultaet3.png" alt="Bild der Fakultät 3"
+          class="fakultaetspreview shadow">
+      </div>
+
+      <!-- <<<<< DRITTE COLUMN >>>>> -->
+
+      <!-- Dritte Column im oberen Container, die für den nahezu tranparenten Schlüssel zuständig ist -->
+      <div class="col-md-4 col-lg d-flex align-items-center justify-content-left p-0 p-md-3">
+
+        <!-- <<<<< WICHTIG >>>>> -->
+
+        <!-- In diesem Fall wird nicht mit Bootstrap-Klassen für das 'display: none' Attribut gearbeitet. 
+        Dem Bild wird eine eigene Klasse hinzugefügt und mithilfe von Breakpoints bekommt diese dann 
+        das display-Attribut zugewiesen. -->
+        <img src="assets/bilder/icons/hsbSchlüssel.png" class="hsb-logo-transparent">
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- <<<<< PREVIEW-ANSICHT DER ALUMNI FÜR DIESE FAKULTÄT -->
+
+
+  <!-- Non-Full-Width-Container für die Preview-Ansicht eines Alumnos. -->
+  <div class="container mb-5 shadow">
+    <!-- Innerer Container, der Grid-System mit "row" festlegt. Hier wird der Hintergrund-Verlauf festgelegt.
+    Bis zur large-size wird ein padding auf der y-Achse gesetzt, um die Abstände zu den Seiten zu halten. -->
+    <div class="row header-background-orange interviewKlick py-3 py-lg-0">
+
+      <!-- <<<<< ERSTE COLUMN >>>>> -->
+
+      <!-- Erste Column für die Preview-Ansicht eines Alumnos. Beinhaltet das Profilbild, den Namen, sowie den Studiengang.
+      Damit der nächste Container zentriert wird, müssen auch hier die Klassen 'align-items-center' und 
+      'justify-content-center' angegeben werden. -->
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
+        <!-- Innerer Container, der erst ab medium-size das Attribut 'display: flex' bekommt, weil durch 'display: block'
+        gewährleistet wird, dass der Name und der Studiengangs-Container auf kleinen Geräten unter dem Profilbild angezeigt wird
+        und nicht wie auf größeren Geräten, daneben. -->
+        <div class="d-md-flex align-items-center text-center text-md-left py-lg-3">
+          <!-- Ein Container, der auf 'position: relative' gesetzt wird, damit das HSB-Kreuz mithilfe 'position: absolute'
+          auf das Profilbild gelegt werden kann. -->
+          <div class="position-relative mx-auto profilbildcontainer">
+            <!-- Das Profilbild des Alumnos -->
+            <img class="profilbild rounded-circle mx-md-3"
+              src="../../assets/bilder/alumni/LisaHeybrock/LisaHeybrock_Profilfoto.jpg"
+              alt="Profilbild von Lisa Heybrock">
+            <!-- Das HSB-Kreuz, welches mithilfe 'position: absolute' auf das Profilbild gelegt wird.
+            Mithilfe von Breakpoints wird die Position innerhalb des Div's mit dem Attribut 'left: ..' verändert. -->
+            <img src="../../assets/bilder/icons/hsbKreuz.png" alt="Das HSB-Kreuz aus dem Logo" class="hsbKreuz">
+          </div>
+          <!-- Container für die Informationen des Alumnos -->
+          <div class="my-3 my-lg-0 shadow-sm">
+            <!-- Information über den Namen und Alter des Alumnos. Mithilfe der Text-Klasse wird der Knockout-Text generiert. -->
+            <p class="text px-2 py-1 mb-1 name">Lisa Heybrock, 27</p>
+            <!-- Information über den Studiengang des Alumnos. Mithilfe der Text-Klasse wird der Knockout-Text generiert. -->
+            <p class="text px-2 padding-y klein"> Angew. Freizeitwissenschaften</p>
+          </div>
+          <!-- Eine horizontale Linie, die nur bis medium-size angezeigt wird. -->
+          <hr class="d-md-none">
+        </div>
+      </div>
+
+      <!-- <<<<< ZWEITE COLUMN >>>>> -->
+
+      <!-- Zweite Column für die Preview-Ansicht eines Alumnos. Beinhaltet das Unternehmens-Logo des Alumnos.
+      Das Logo wird zentriert dargestellt. -->
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
+        <!-- Container, der das Logo und eine horizontale Linie enthält. -->
+        <div class="d-md-flex justify-content-center text-center">
+          <img src="../../assets/bilder/alumni/LisaHeybrock/HamburgMesse_Logo.png"
+            alt="Das Firmenlogo der Hamburg Messe" class="firmenlogo hamburgMesse">
+          <!-- Eine horizontale Linie, die nur bis medium-size angezeigt wird. -->
+          <hr class="d-md-none">
+        </div>
+      </div>
+
+      <!-- <<<<< DRITTE COLUMN >>>>> -->
+
+      <!-- Dritte Column, die den Button beinhaltet, der zum Interview führt. -->
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
+        <!-- Link zum Weiterführen auf das Interview des Alumnos. -->
+        <a href="../../html/interviewseiten/interview_LisaHeybrock.html">
+          <img src="../../assets/bilder/icons/zumInterview.png" alt="Button zum Erreichen des Interviews"
+            class="zumInterview">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

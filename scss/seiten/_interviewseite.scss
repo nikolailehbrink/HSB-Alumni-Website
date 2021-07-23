@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: bottom;
+    outline: 0;
+}
+
+.left-2 {
+    left: -.8rem;
+}
+
+// Anfang-Preview Profil
+
+.hsbkreuz {
+    position: absolute;
+    left: 4px;
+    bottom: 0;
+    transform: scale(0.7);
+}
+
+.downarrow {
+    color: white;
+}
+
+.hsbkey {
+    opacity: .03;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100vh;
+    /* Need a specific value to work */
+}
+
+.personendiv {
+    background-color: #0a558c;
+    height: 100vh;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    &.orange{
+        background-color: $hsb_farbe_orange; 
+    }
+    // padding: 7rem 3rem 2rem 7rem;
+    .height1 {
+        height: 50%;
+        padding: 7rem 0 0 7rem;
+    }
+
+    .height2 {
+        height: 35%;
+        margin: 0;
+    }
+
+    .profilbild {
+        height: 230px;
+        width: auto;
+    }
+}
+
+.margin-left {
+    margin-left: 4rem;
+}
+
+.icon {
+    height: 47px;
+    width: auto;
+    margin-right: 1rem;
+    ;
+}
+
+.infotext {
+    color: white;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    line-height: 1.15;
+    text-align: left;
+
+}
+
+.font-size-2rem {
+    font-size: 2rem;
+}
+
+
+
+.opacity_kreuz {
+    opacity: 0.2;
+    left: -10px;
+    top: -15px;
+    position: absolute;
+}
+
+.brdisplay{
+    display: none;
+}
+
+.zitat {
+    color: white;
+    font-weight: 300;
+}
+
+.hsblogo {
+    max-width: 40%;
+}
+
+.white-bg {
+    background-color: white;
+    mix-blend-mode: lighten;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    box-decoration-break: clone;
+}
+
+.small {
+    font-size: 95%;
+}
+
+.padding-seiten {
+    padding: 3rem 3rem 3rem 6rem;
+}
+
+
+.container {
+    .hsbkreuz {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: -26px;
+        transform: scale(0.7);
+    }
+
+    .fakultaetsbild {
+        object-fit: cover;
+        height: 90%;
+        max-width: 75%;
+        height: auto;
+        width: auto;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            img {
+                height: auto;
+                width: 45px;
+                vertical-align: top;
+            }
+
+            p {
+                color: white;
+                font-size: 1.25rem;
+                margin-left: 1rem;
+                display: inline-block;
+                vertical-align: sub;
+            }
+
+            .checkmark {
+                width: 30px;
+            }
+        }
+    }
+}
+
+//Sonst kleiner scroll nach rechts
+h2 {
+    font-size: 1.7rem;
+}
+
+#wholesite {
+    overflow: hidden;
+}
+
+.studium_content_wrapper {
+    position: relative;
+
+    .rechterBlock {
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    #studium_preview_wrapper {
+        height: 100vh;
+        width: 50%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: #0a558c;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    #job_preview_wrapper {
+        height: 100vh;
+        width: 50%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: #0a558c;
+    }
+
+    .rechts {
+        min-height: 100vh;
+        padding-bottom: 5vh;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
+}
+
+// Textformattierung
+
+.textcontainer {
+    padding: 3rem 7rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    b,
+    strong {
+        color: #0a558c;
+    }
+    &.orangeColor{
+        h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    b,
+    strong {
+        color: $hsb_farbe_orange !important;
+    }
+
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    h5 {
+        margin-bottom: 0.625rem;
+    }
+
+    h6 {
+        line-height: inherit;
+        text-align: justify;
+    }
+}
+
+.sticky {
+    position: fixed !important;
+}
+
+.bottom {
+    bottom: 0;
+    top: initial !important;
+}
+
+.interviewseite_zurueck{
+    position: absolute;
+    top: 7rem;
+    right: 100px;
+    z-index: 100;
+}
+
+// Media Queries
+
+@media (min-width: 992px) {
+    .erster {
+        text-align: left;
+    }
+
+    .zweiter {
+        left: 240px;
+        top: 203px;
+        position: absolute;
+    }
+
+    .dritter {
+        left: 95px;
+        top: 294px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .zitatcontainer {
+        margin-top: 4.5rem;
+
+    }
+
+    .padding-seiten {
+        padding: 2rem;
+    }
+
+    .textcontainer {
+        padding: 2rem 3.5rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .zitatcontainer {
+        margin-top: 1rem;
+    }
+
+    .interviewseite_zurueck{
+        top: 2rem;
+        right: auto;
+        left: 4rem;
+    }
+
+    .abstand {
+        &.kruse {
+            &.zweiter {
+                padding-left: 0.77rem;
+            }
+
+        }
+    }
+
+    .personendiv {
+
+        .height1 {
+            padding: 0;
+        }
+    }
+
+    .zitatcontainer {
+        padding-left: 2rem;
+    }
+
+    .zitat {
+        font-size: 2rem;
+    }
+
+    .icon {
+        height: auto;
+        width: 35px;
+
+        &.zentrieren {
+            margin-bottom: .25rem;
+        }
+    }
+
+    .margin-left {
+        margin: 0;
+    }
+    .hsbkreuz{
+        left: -11px;
+        transform: scale(0.6)
+    }
+    .personendiv {
+        height: auto;
+        padding: 2rem;
+        .profilbild{
+
+                    height: 170px;
+                    width: auto;
+        }
+
+        .erster{
+            &.heybrock{
+                padding-left: 4rem;
+            }
+            &.dieckvoss{
+                padding-right: 0.4rem
+            }
+
+            &.anschuetz{
+                padding-right: 1rem;
+            }
+        }
+        .zweiter{
+            &.heybrock{
+                padding-right: 4.5rem;
+            }
+            &.dieckvoss{
+                padding-left: 1.85rem;
+            }
+        }
+        .dritter{
+            &.heybrock{
+                padding-left: 2rem; 
+            }
+            &.dieckvoss{
+                padding-left: 1.75rem; 
+            }
+            &.anschuetz{
+                padding-left: 2.2rem; 
+            }
+        }
+
+        .erster,
+        .zweiter,
+        .dritter {
+            position: relative;
+            // left: 39%;
+            top: auto;
+            margin-bottom: 1rem;
+        }
+
+        .dritter {
+            vertical-align: baseline;
+            padding-right: .94rem;
+        }
+    }
+
+    .studium_content_wrapper {
+        .rechterBlock {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        #studium_preview_wrapper {
+            width: 100%;
+            position: relative;
+            height: auto;
+        }
+
+        #job_preview_wrapper {
+            width: 100%;
+            position: relative;
+            height: auto;
+        }
+    }
+
+    .textcontainer {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .brdisplay{
+        display: block;
+    }
+    .font-size-2rem {
+        font-size: 1.6rem;
+    }
+    .interviewseite_zurueck{
+        left: 1rem;
+        .interview_zurueckButton{
+            height: 30px;
+
+        }
+    }
+
+    .personendiv {
+
+        .profilbild {
+            height: 130px;
+            width: auto;
+        }
+
+        .hsbkreuz {
+            left: -17px;
+            bottom: -10px;
+            transform: scale(0.5);
+        }
+    }
+
+    .zitatcontainer {
+        padding: 0;
+    }
+
+    // .erster,.zweiter,.dritter{
+    // left: 27% !important;
+    // }
+    .zitat {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        .hsbkreuz {
+            transform: scale(0.5);
+            margin: -29px;
+        }
+
+        ul {
+
+            li {
+                img {
+                    width: 35px;
+                    vertical-align: top;
+                }
+
+                p {
+                    font-size: 1rem;
+                    margin-left: .5rem;
+                }
+
+                .checkmark {
+                    width: 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    .textcontainer {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            text-align: left;
+        }
+    }
+}
+.orange{
+    background-color: $hsb_farbe_orange !important; 
+}

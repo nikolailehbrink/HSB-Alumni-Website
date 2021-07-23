@@ -1,0 +1,19 @@
+//FARBEN
+$hsb_farbe_blau:#0A558C;
+$hsb_farbe_hellblau: #32B4C8;
+$hsb_farbe_gruen: #00915A;
+$hsb_farbe_hellgruen: #6EA53C;
+$hsb_farbe_gelb:#FABE00;
+$hsb_farbe_orange: #F07823;
+$hsb_farbe_rot: #C30532;
+$hsb_farbe_violett:#7864A5;
+
+//FARBVERLAUEFE
+$hsb_verlauf_blau_hellblau: linear-gradient(to right, $hsb_farbe_blau, $hsb_farbe_hellblau);
+$hsb_verlauf_gruen_hellgruen: linear-gradient(to right, $hsb_farbe_gruen, $hsb_farbe_hellgruen);
+$hsb_verlauf_gelb_orange: linear-gradient(to right, $hsb_farbe_gelb, $hsb_farbe_orange);
+$hsb_verlauf_rot_violett: linear-gradient(to right, $hsb_farbe_rot, $hsb_farbe_violett);
+$hsb_verlauf_violett_blau: linear-gradient(to right, $hsb_farbe_violett, $hsb_farbe_blau);
+
+$hsb_verlauf_startseite: linear-gradient(rgba($hsb_farbe_hellblau,0.5),rgba($hsb_farbe_blau,0.5));
+$hsb_verlauf_top: linear-gradient(rgba($hsb_farbe_hellblau,1),rgba($hsb_farbe_blau,1));

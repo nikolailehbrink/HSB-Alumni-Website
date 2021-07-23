@@ -1,0 +1,190 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+// Top-Bar
+
+.header-background-orange {
+  background: $hsb_verlauf_gelb_orange;
+}
+
+.header-background-violett {
+  background: $hsb_verlauf_violett_blau;
+}
+
+.header-background-gruen {
+  background: $hsb_verlauf_gruen_hellgruen;
+}
+
+.header-background-rot {
+  background: $hsb_verlauf_rot_violett;
+}
+
+.header-background-blau {
+  background: $hsb_verlauf_blau_hellblau;
+}
+
+.header-background-grau {
+  background: linear-gradient(to right, rgb(134, 134, 134), rgb(82, 82, 82));
+}
+
+.fakultaetspreview {
+  min-height: 150px;
+  max-height: 300px;
+  width: auto;
+}
+
+.zurueckButtonBild {
+  width: 50px;
+  height: auto;
+}
+
+.zurueckButton {
+  top: 1rem;
+  left: 1rem;
+}
+
+.fakultaetsIcons {
+  width: auto;
+  height: 25px;
+}
+
+.hsb-logo-transparent {
+  height: 300px;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.15;
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.15));
+}
+
+.whiteFont{
+  color: white;
+}
+// Preview-Ansicht der Alumni
+
+.profilbild {
+  height: 80px;
+  width: auto;
+  &.annadieckvoss {
+    transform: rotate(-7deg);
+  }
+  &.anschuetz {
+    transform: rotate(5deg);
+  }
+  &.stockimage {
+    object-fit: cover;
+    object-position: 35% 0;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.hsbKreuz {
+  position: absolute;
+  top: 55px;
+  height: 28px;
+  left: 17px;
+}
+
+.text {
+  // display: table;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  mix-blend-mode: lighten;
+  background-color: rgb(255, 255, 255);
+}
+
+.name {
+  font-size: 125%;
+  line-height: 1.4rem;
+}
+
+.musterlogo {
+  letter-spacing: 0.015em;
+  font-size: 1.8rem;
+  color: white;
+}
+.padding-y {
+  padding: 0.05rem 0;
+}
+
+.klein {
+  font-size: 70%;
+}
+
+hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.fakultaetscontainer p {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.firmenlogo {
+  &.hamburgMesse {
+    width: 220px;
+    height: auto;
+  }
+  &.schulz {
+    height: 70px;
+    width: auto;
+  }
+}
+
+.zumInterviewMuster {
+  height: auto;
+  width: 200px;
+  &:hover{
+    cursor: not-allowed;
+  }
+}
+.zumInterview {
+  height: auto;
+  width: 220px;
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    width: 240px;
+  }
+}
+
+.profilbildcontainer {
+  max-width: 130px;
+}
+
+// Media-Breakpoints
+
+@media (max-width: 767.98px) {
+  .fakultaetspreview {
+    max-width: 50%;
+  }
+
+  .hsbKreuz {
+    left: 26px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hsb-logo-transparent {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .interviewKlick {
+    height: 130px;
+  }
+}

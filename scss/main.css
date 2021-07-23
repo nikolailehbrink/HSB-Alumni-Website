@@ -1,0 +1,841 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap");
+* {
+  font-family: "Roboto Slab", serif;
+}
+
+.zitat {
+  font-size: "22px";
+}
+
+input {
+  border: none;
+  background-color: transparent;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.row * {
+  padding: 0;
+}
+
+#logoAlumniPortal {
+  z-index: 2;
+}
+
+a {
+  text-align: center;
+}
+
+.startseite-logo {
+  position: fixed;
+  width: 30%;
+  top: 5%;
+  right: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 180, 200, 0.5)), to(rgba(10, 85, 140, 0.5)));
+  background: linear-gradient(rgba(50, 180, 200, 0.5), rgba(10, 85, 140, 0.5));
+}
+
+#suchleiste {
+  position: fixed;
+  bottom: 20%;
+  width: 30%;
+  right: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.submitLupe {
+  cursor: not-allowed;
+}
+
+button {
+  cursor: pointer;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+option {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+#platzhalter {
+  width: 90%;
+  text-align: center;
+  font-weight: lighter;
+  padding-left: 15px;
+  color: #535353;
+}
+
+.viewport {
+  height: 100vh;
+  padding: 0;
+}
+
+.makeImageSmaller {
+  max-width: 80%;
+}
+
+.z-index {
+  position: absolute;
+}
+
+.fakultaet-bg-img {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fakultaet-bg-img.fakultaet1-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 180, 200, 0.5)), to(rgba(10, 85, 140, 0.5))), url("../assets/bilder/standorte/Werderstrasse_Hoch.jpg") center;
+  background: linear-gradient(rgba(50, 180, 200, 0.5), rgba(10, 85, 140, 0.5)), url("../assets/bilder/standorte/Werderstrasse_Hoch.jpg") center;
+}
+
+.fakultaet-bg-img.fakultaet2-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 180, 200, 0.5)), to(rgba(10, 85, 140, 0.5))), url("../assets/bilder/standorte/Neustadtswall_Hoch_1.jpg") center;
+  background: linear-gradient(rgba(50, 180, 200, 0.5), rgba(10, 85, 140, 0.5)), url("../assets/bilder/standorte/Neustadtswall_Hoch_1.jpg") center;
+}
+
+.fakultaet-bg-img.fakultaet3-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 180, 200, 0.5)), to(rgba(10, 85, 140, 0.5))), url("../assets/bilder/standorte/Neustadtswall_Hoch_2.jpg") center;
+  background: linear-gradient(rgba(50, 180, 200, 0.5), rgba(10, 85, 140, 0.5)), url("../assets/bilder/standorte/Neustadtswall_Hoch_2.jpg") center;
+}
+
+.fakultaet-bg-img.fakultaet4-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 180, 200, 0.5)), to(rgba(10, 85, 140, 0.5))), url("../assets/bilder/standorte/Zimt_Hoch.jpg") center;
+  background: linear-gradient(rgba(50, 180, 200, 0.5), rgba(10, 85, 140, 0.5)), url("../assets/bilder/standorte/Zimt_Hoch.jpg") center;
+}
+
+.fakultaet-bg-img.fakultaet5-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 180, 200, 0.5)), to(rgba(10, 85, 140, 0.5))), url("../assets/bilder/standorte/Neustadtswall_Hoch_3.jpg") center;
+  background: linear-gradient(rgba(50, 180, 200, 0.5), rgba(10, 85, 140, 0.5)), url("../assets/bilder/standorte/Neustadtswall_Hoch_3.jpg") center;
+}
+
+@media (max-width: 991.98px) {
+  #logoAlumniPortal {
+    background: #0A558C;
+  }
+  .startseite-logo {
+    position: relative;
+    width: 20%;
+    top: 0;
+    width: 80%;
+    margin-top: 5%;
+    right: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .fixed {
+    position: fixed;
+    top: 10px;
+  }
+  #suchleiste {
+    position: relative;
+    bottom: 0;
+    width: 80%;
+    right: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin: 5% 0;
+    background-color: white;
+    text-align: center;
+  }
+  #gradient {
+    height: 100%;
+  }
+  .fakultaet-bg-img img {
+    min-width: 60%;
+    padding: 10% 5% !important;
+  }
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.header-background-orange {
+  background: -webkit-gradient(linear, left top, right top, from(#FABE00), to(#F07823));
+  background: linear-gradient(to right, #FABE00, #F07823);
+}
+
+.header-background-violett {
+  background: -webkit-gradient(linear, left top, right top, from(#7864A5), to(#0A558C));
+  background: linear-gradient(to right, #7864A5, #0A558C);
+}
+
+.header-background-gruen {
+  background: -webkit-gradient(linear, left top, right top, from(#00915A), to(#6EA53C));
+  background: linear-gradient(to right, #00915A, #6EA53C);
+}
+
+.header-background-rot {
+  background: -webkit-gradient(linear, left top, right top, from(#C30532), to(#7864A5));
+  background: linear-gradient(to right, #C30532, #7864A5);
+}
+
+.header-background-blau {
+  background: -webkit-gradient(linear, left top, right top, from(#0A558C), to(#32B4C8));
+  background: linear-gradient(to right, #0A558C, #32B4C8);
+}
+
+.header-background-grau {
+  background: -webkit-gradient(linear, left top, right top, from(#868686), to(#525252));
+  background: linear-gradient(to right, #868686, #525252);
+}
+
+.fakultaetspreview {
+  min-height: 150px;
+  max-height: 300px;
+  width: auto;
+}
+
+.zurueckButtonBild {
+  width: 50px;
+  height: auto;
+}
+
+.zurueckButton {
+  top: 1rem;
+  left: 1rem;
+}
+
+.fakultaetsIcons {
+  width: auto;
+  height: 25px;
+}
+
+.hsb-logo-transparent {
+  height: 300px;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.15;
+  -webkit-filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.15));
+}
+
+.whiteFont {
+  color: white;
+}
+
+.profilbild {
+  height: 80px;
+  width: auto;
+}
+
+.profilbild.annadieckvoss {
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+}
+
+.profilbild.anschuetz {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.profilbild.stockimage {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 35% 0;
+     object-position: 35% 0;
+  width: 80px;
+  height: 80px;
+}
+
+.hsbKreuz {
+  position: absolute;
+  top: 55px;
+  height: 28px;
+  left: 17px;
+}
+
+.text {
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  mix-blend-mode: lighten;
+  background-color: white;
+}
+
+.name {
+  font-size: 125%;
+  line-height: 1.4rem;
+}
+
+.musterlogo {
+  letter-spacing: 0.015em;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.padding-y {
+  padding: 0.05rem 0;
+}
+
+.klein {
+  font-size: 70%;
+}
+
+hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.fakultaetscontainer p {
+  display: block;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+}
+
+.firmenlogo.hamburgMesse {
+  width: 220px;
+  height: auto;
+}
+
+.firmenlogo.schulz {
+  height: 70px;
+  width: auto;
+}
+
+.zumInterviewMuster {
+  height: auto;
+  width: 200px;
+}
+
+.zumInterviewMuster:hover {
+  cursor: not-allowed;
+}
+
+.zumInterview {
+  height: auto;
+  width: 220px;
+}
+
+.zumInterview:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  width: 240px;
+}
+
+.profilbildcontainer {
+  max-width: 130px;
+}
+
+@media (max-width: 767.98px) {
+  .fakultaetspreview {
+    max-width: 50%;
+  }
+  .hsbKreuz {
+    left: 26px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hsb-logo-transparent {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .interviewKlick {
+    height: 130px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: bottom;
+  outline: 0;
+}
+
+.left-2 {
+  left: -.8rem;
+}
+
+.hsbkreuz {
+  position: absolute;
+  left: 4px;
+  bottom: 0;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.downarrow {
+  color: white;
+}
+
+.hsbkey {
+  opacity: .03;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 100vh;
+  /* Need a specific value to work */
+}
+
+.personendiv {
+  background-color: #0a558c;
+  height: 100vh;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.personendiv.orange {
+  background-color: #F07823;
+}
+
+.personendiv .height1 {
+  height: 50%;
+  padding: 7rem 0 0 7rem;
+}
+
+.personendiv .height2 {
+  height: 35%;
+  margin: 0;
+}
+
+.personendiv .profilbild {
+  height: 230px;
+  width: auto;
+}
+
+.margin-left {
+  margin-left: 4rem;
+}
+
+.icon {
+  height: 47px;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.infotext {
+  color: white;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.font-size-2rem {
+  font-size: 2rem;
+}
+
+.opacity_kreuz {
+  opacity: 0.2;
+  left: -10px;
+  top: -15px;
+  position: absolute;
+}
+
+.brdisplay {
+  display: none;
+}
+
+.zitat {
+  color: white;
+  font-weight: 300;
+}
+
+.hsblogo {
+  max-width: 40%;
+}
+
+.white-bg {
+  background-color: white;
+  mix-blend-mode: lighten;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+
+.small {
+  font-size: 95%;
+}
+
+.padding-seiten {
+  padding: 3rem 3rem 3rem 6rem;
+}
+
+.container .hsbkreuz {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: -26px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.container .fakultaetsbild {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 90%;
+  max-width: 75%;
+  height: auto;
+  width: auto;
+}
+
+.container ul {
+  list-style-type: none;
+}
+
+.container ul li img {
+  height: auto;
+  width: 45px;
+  vertical-align: top;
+}
+
+.container ul li p {
+  color: white;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+.container ul li .checkmark {
+  width: 30px;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+#wholesite {
+  overflow: hidden;
+}
+
+.studium_content_wrapper {
+  position: relative;
+}
+
+.studium_content_wrapper .rechterBlock {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.studium_content_wrapper #studium_preview_wrapper {
+  height: 100vh;
+  width: 50%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: #0a558c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.studium_content_wrapper #job_preview_wrapper {
+  height: 100vh;
+  width: 50%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: #0a558c;
+}
+
+.studium_content_wrapper .rechts {
+  min-height: 100vh;
+  padding-bottom: 5vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.textcontainer {
+  padding: 3rem 7rem;
+}
+
+.textcontainer h1,
+.textcontainer h2,
+.textcontainer h3,
+.textcontainer h4,
+.textcontainer h5,
+.textcontainer h6,
+.textcontainer b,
+.textcontainer strong {
+  color: #0a558c;
+}
+
+.textcontainer.orangeColor h1,
+.textcontainer.orangeColor h2,
+.textcontainer.orangeColor h3,
+.textcontainer.orangeColor h4,
+.textcontainer.orangeColor h5,
+.textcontainer.orangeColor h6,
+.textcontainer.orangeColor b,
+.textcontainer.orangeColor strong {
+  color: #F07823 !important;
+}
+
+.textcontainer p {
+  text-align: justify;
+}
+
+.textcontainer h5 {
+  margin-bottom: 0.625rem;
+}
+
+.textcontainer h6 {
+  line-height: inherit;
+  text-align: justify;
+}
+
+.sticky {
+  position: fixed !important;
+}
+
+.bottom {
+  bottom: 0;
+  top: initial !important;
+}
+
+.interviewseite_zurueck {
+  position: absolute;
+  top: 7rem;
+  right: 100px;
+  z-index: 100;
+}
+
+@media (min-width: 992px) {
+  .erster {
+    text-align: left;
+  }
+  .zweiter {
+    left: 240px;
+    top: 203px;
+    position: absolute;
+  }
+  .dritter {
+    left: 95px;
+    top: 294px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .zitatcontainer {
+    margin-top: 4.5rem;
+  }
+  .padding-seiten {
+    padding: 2rem;
+  }
+  .textcontainer {
+    padding: 2rem 3.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .zitatcontainer {
+    margin-top: 1rem;
+  }
+  .interviewseite_zurueck {
+    top: 2rem;
+    right: auto;
+    left: 4rem;
+  }
+  .abstand.kruse.zweiter {
+    padding-left: 0.77rem;
+  }
+  .personendiv .height1 {
+    padding: 0;
+  }
+  .zitatcontainer {
+    padding-left: 2rem;
+  }
+  .zitat {
+    font-size: 2rem;
+  }
+  .icon {
+    height: auto;
+    width: 35px;
+  }
+  .icon.zentrieren {
+    margin-bottom: .25rem;
+  }
+  .margin-left {
+    margin: 0;
+  }
+  .hsbkreuz {
+    left: -11px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .personendiv {
+    height: auto;
+    padding: 2rem;
+  }
+  .personendiv .profilbild {
+    height: 170px;
+    width: auto;
+  }
+  .personendiv .erster.heybrock {
+    padding-left: 4rem;
+  }
+  .personendiv .erster.dieckvoss {
+    padding-right: 0.4rem;
+  }
+  .personendiv .erster.anschuetz {
+    padding-right: 1rem;
+  }
+  .personendiv .zweiter.heybrock {
+    padding-right: 4.5rem;
+  }
+  .personendiv .zweiter.dieckvoss {
+    padding-left: 1.85rem;
+  }
+  .personendiv .dritter.heybrock {
+    padding-left: 2rem;
+  }
+  .personendiv .dritter.dieckvoss {
+    padding-left: 1.75rem;
+  }
+  .personendiv .dritter.anschuetz {
+    padding-left: 2.2rem;
+  }
+  .personendiv .erster,
+  .personendiv .zweiter,
+  .personendiv .dritter {
+    position: relative;
+    top: auto;
+    margin-bottom: 1rem;
+  }
+  .personendiv .dritter {
+    vertical-align: baseline;
+    padding-right: .94rem;
+  }
+  .studium_content_wrapper .rechterBlock {
+    width: 100%;
+    margin-left: 0;
+  }
+  .studium_content_wrapper #studium_preview_wrapper {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  .studium_content_wrapper #job_preview_wrapper {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  .textcontainer {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .brdisplay {
+    display: block;
+  }
+  .font-size-2rem {
+    font-size: 1.6rem;
+  }
+  .interviewseite_zurueck {
+    left: 1rem;
+  }
+  .interviewseite_zurueck .interview_zurueckButton {
+    height: 30px;
+  }
+  .personendiv .profilbild {
+    height: 130px;
+    width: auto;
+  }
+  .personendiv .hsbkreuz {
+    left: -17px;
+    bottom: -10px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  .zitatcontainer {
+    padding: 0;
+  }
+  .zitat {
+    font-size: 1.4rem;
+  }
+  .container .hsbkreuz {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    margin: -29px;
+  }
+  .container ul li img {
+    width: 35px;
+    vertical-align: top;
+  }
+  .container ul li p {
+    font-size: 1rem;
+    margin-left: .5rem;
+  }
+  .container ul li .checkmark {
+    width: 20px;
+    vertical-align: middle;
+  }
+  .textcontainer h1,
+  .textcontainer h2,
+  .textcontainer h3,
+  .textcontainer h4,
+  .textcontainer h5,
+  .textcontainer h6,
+  .textcontainer p {
+    text-align: left;
+  }
+}
+
+.orange {
+  background-color: #F07823 !important;
+}
+/*# sourceMappingURL=main.css.map */

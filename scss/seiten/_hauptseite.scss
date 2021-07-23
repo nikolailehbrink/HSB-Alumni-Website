@@ -1,0 +1,153 @@
+.row * {
+    padding: 0;
+    // border: 1px solid red;
+}
+
+#logoAlumniPortal {
+    z-index: 2;
+}
+
+a {
+    text-align: center;
+}
+
+.startseite-logo {
+    position: fixed;
+    width: 30%;
+    top: 5%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0;
+    align-items: center;
+}
+
+#gradient {
+    background: $hsb_verlauf_startseite;
+}
+
+#suchleiste {
+    position: fixed;
+    bottom: 20%;
+    width: 30%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+.submitLupe{
+    cursor: not-allowed;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+option {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+#platzhalter {
+    width: 90%;
+    text-align: center;
+    font-weight: lighter;
+    padding-left: 15px;
+    color: rgb(83, 83, 83);
+}
+
+.viewport {
+    height: 100vh;
+    padding: 0;
+}
+
+.makeImageSmaller {
+    max-width: 80%;
+}
+
+.z-index {
+    position: absolute;
+}
+
+.fakultaet-bg-img {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    &.fakultaet1-bg {
+        background: $hsb_verlauf_startseite, url("../assets/bilder/standorte/Werderstrasse_Hoch.jpg") center;
+    }
+
+    &.fakultaet2-bg {
+        background: $hsb_verlauf_startseite, url("../assets/bilder/standorte/Neustadtswall_Hoch_1.jpg") center;
+    }
+
+    &.fakultaet3-bg {
+        background: $hsb_verlauf_startseite, url("../assets/bilder/standorte/Neustadtswall_Hoch_2.jpg") center;
+    }
+
+    &.fakultaet4-bg {
+        background: $hsb_verlauf_startseite, url("../assets/bilder/standorte/Zimt_Hoch.jpg") center;
+    }
+
+    &.fakultaet5-bg {
+        background: $hsb_verlauf_startseite, url("../assets/bilder/standorte/Neustadtswall_Hoch_3.jpg") center;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    #logoAlumniPortal {
+        background: $hsb_farbe_blau;
+    }
+
+    .startseite-logo {
+        position: relative;
+        width: 20%;
+        top: 0;
+        width: 80%;
+        margin-top: 5%;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .fixed {
+        position: fixed;
+        top: 10px;
+    }
+
+    #suchleiste {
+        position: relative;
+        bottom: 0;
+        width: 80%;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 5% 0;
+        background-color: white;
+        text-align: center;
+    }
+
+    #gradient {
+        height: 100%;
+    }
+
+    .fakultaet-bg-img {
+
+        img {
+            min-width: 60%;
+
+            padding: 10% 5% !important;
+        }
+    }
+}
