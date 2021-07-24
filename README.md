@@ -1,6 +1,8 @@
 # Introduction
  An alumni site for former students of the Bremen University of Applied Sciences. This was a project in the fourth semester of the Hochschule Bremen in the course of studies Media Informatics. Before creating the website, an Adobe-XD prototype was created, which was then implemented with HTML, CSS and JS. 
 
+# Screens
+
 ## Homepage
 ![image](https://user-images.githubusercontent.com/38915700/126805932-fe132d27-3191-41b4-b04c-e1e7db6359fe.png)
 
